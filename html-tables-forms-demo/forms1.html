@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms!</title>
+</head>
+
+<body>
+  <h1>Forms Demo</h1>
+  <form>
+    <input type="text" name="city" placeholder="Enter a City" required minlength="3">
+    <input type="range">
+  </form>
+
+  <button>Button!</button>
+  <h2>Register </h2>
+  <form>
+    <label for="">
+      Enter Email:
+      <input type="email" name="email" placeholder="john@doe.com">
+    </label><br>
+    <label for="">
+      Enter Password:
+      <input type="password" placeholder="Password" name="password">
+    </label>
+
+    <input type="checkbox" name="tos-agree" name="agree">I agree
+
+    <p>Select Shirt Size</p>
+    <label>
+      <input type="radio" name="shirt-size" value="XS">
+      XS
+    </label>
+    <br>
+    <label for=""></label>
+    <!-- Label using nesting -->
+    <input type="radio" name="shirt-size" value="S"> S <br>
+    <input type="radio" name="shirt-size" value="M"> M <br>
+    <input type="radio" name="shirt-size" value="L"> L <br>
+    <input type="submit" value="Go!">
+  </form>
+
+  <h2>Other Input Types</h2>
+  <form>
+    Pick a color: <input type="color" name="color"><br>
+    What's your b-day?: <input type="date" name="birthday"><br>
+    How loud?: <input type="range" name="volume" min="1" max="10" step="1">
+    <br>
+    Select a State:
+    <select name="State">
+      <option value="">Choose a State</option>
+      <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+    </select><br>
+    Your Essay:
+    <textarea name="" id="" cols="30"
+      rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis autem maiores enim soluta ullam rem nemo praesentium quos odio! Expedita voluptates facere inventore tempore, totam laboriosam? Autem, vero sapiente!</textarea>
+    <button type="submit"> Submit</button>
+
+  </form>
+  <form action="https://reddit.com/search" method="get">
+    <input type="text" name="q">
+    <select name="sort">
+      <option value="top">Top</option>
+      <option value="new">New</option>
+      <option value="comments">Comments</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  <form action="" enctype="multipart/form-data">
+    <input type="file" name="" id="">
+  </form>
+  <input type="file">
+
+</body>
+
+</html>
